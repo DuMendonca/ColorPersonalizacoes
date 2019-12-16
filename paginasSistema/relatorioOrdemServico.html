@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Color Personalizações</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/relatorioOrdemServico.css">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <script src="../js/relatorioOrdemServico.js"></script>
+</head>
+<body>
+
+<header id="cabecalho">
+	<nav id="menu">
+		<ul id="menuPrincipal">
+			<li><a href="registroProduto.html" class="menuTexto"> Registros</a>
+        <ul class="submenu">
+          <li><a href="registroProduto.html">Produtos</a></li>
+          <li><a href="registroCategoria.html">Categorias</a></li>
+          <li><a href="registroCliente.html">Clientes</a></li>
+          <li><a href="registroUsuario.html">Usuários</a></li>
+        </ul>
+      </li>
+			<li><a href="orcamento.html" class="menuTexto"> Orçamento</a></li>
+			<li><a href="ordemServico.html" class="menuTexto"> Ordem de serviço</a></li>
+      <li><a href="relatorioOrcamento.html" class="menuTexto"> Relatórios</a>
+        <ul class="submenu">
+          <li><a href="relatorioOrcamento.html">Orçamentos</a></li>
+          <li><a href="relatorioOrdemServico.html">Ordem de Serviços</a></li>
+        </ul>
+      </li>
+			<li id="menuBv"><a href="../index.html">Bem vindo(a) Simone</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section id="relatorioOrdem">
+  <h1>Relatório de ordem de serviço</h1>
+</section>
+
+
+<main id="conteudoPrincipal">
+  <div class="divs" id="divFiltro">
+    <fieldset id="fieldFiltro">
+      <legend >Filtro</legend>
+      <form action="#" method="POST" id="formFiltro" onsubmit="return validarCampos()">
+        <label class="campos" for="selectClientes" id="filtroClientes">Clientes:</label>
+        <select id="selectClientes">
+          <option value="0">Selecione...</option>
+          <option value="1">Célia Abreu</option>
+          <option value="2">Supermercado SW</option>
+        </select>
+
+        <label  class="campos" for="dataInicialFiltro" id="filtroDataInicial">Data Inicial</label>
+        <input class ="camposForm" type="date" name="dataInicialFiltro" id="dataInicialFiltro">
+
+        <label class="campos" for="dataFinalFiltro" id="filtroDataFinal">Data Final</label>
+        <input class="camposForm" type="date" name="dataFinalFiltro" id="dataFinalFiltro">
+
+        <label class="campos" for="selectFuncionarios" id="filtroFuncionario">Funcionario executor:</label>
+        <select id="selectFuncionarios">
+          <option value="0">Selecione...</option>
+          <option value="1">André Marques</option>
+          <option value="2">Willian Honorato</option>
+        </select>
+
+        <label class="campos" for="selectStatus" id="filtroStatus">Status:</label>
+        <select id="selectStatus">
+          <option value="0">Selecione...</option>
+          <option value="1">Em aberto</option>
+          <option value="2">Em andamento</option>
+          <option value="3">Finalizada</option>
+          <option value="4">Cancelada</option>
+        </select><br>
+        
+        <button type="reset" class="botoes">
+          <img class="botoesImg" src="../imgs/buttonLimpar.png" alt="Botão limpa campos">
+        </button>
+        <button type="submit" class="botoes">
+          <img class="botoesImg" src="../imgs/buttonGerar.png" alt="Botão para gerar o relatorio ">
+        </button>
+      </form>
+    </fieldset>
+  </div>
+  <div class="divs" id="divRelatorio">
+    <fieldset id="fieldRelatorio">
+      <legend>Relatório</legend>
+      <button type="submit" class="botoes">
+        <img class="botoesImg" src="../imgs/buttonGerarPdf.png" alt="Botão para gerar o PDF ">
+      </button>
+
+      <table>
+        <tr>
+          <th>Código</th>
+          <th>Cliente</th>
+          <th>Valor total</th>
+          <th>Funcionário responsável</th>
+          <th>Produtos</th>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td>Célia Abreu</td>
+          <td>R$6000.00</td>
+          <td>André Marques</td>
+          <td>Caneca, Chaveiro, Caneta</td>
+
+          <tr>
+          <td>089</td>
+          <td>JVM Frutaria</td>
+          <td>R$245.00</td>
+          <td>Willian Honorato</td>
+          <td>Agenda</td>
+        </tr>
+      </table>
+    </fieldset>
+  </div>
+</main>
+
+<footer id="rodape">
+<p id="copyright">Copyright SENAI &copy;</p>
+</footer>
+
+</body>
+</html>

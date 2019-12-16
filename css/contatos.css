@@ -1,0 +1,149 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html, body{
+	height: 110%;
+	width: 100%;
+}
+#cabecalho{
+	height: 10%;
+	width: 100%;
+	background-color: #102E51;
+}
+
+	#menuPrincipal li, #menuPrincipal a{
+		list-style: none;
+		text-decoration: none;
+	}
+	.submenu{
+		display: none;
+		position: absolute;
+	}
+	#menuPrincipal{
+		float: left;
+		font-size: 17px;
+	}
+	#menuPrincipal a{
+		padding: 0px 20px;
+		height: 45px;
+		float: left;
+		line-height: 45px;
+		color: white;
+	}
+	#menuPrincipal li{
+		display: inline-block;
+		padding-top: 5px;
+	}
+	.submenu a{
+		color: white;
+		background-color: #102E51;
+		width: 150px;
+		margin-bottom: -10px;
+	}
+	#menuPrincipal li:hover > .submenu{
+		display: block;
+		top: 45px;
+		width: 150px;
+	}
+	.submenu li:hover > a{
+		background-color:  #FC7307;
+	}
+	#menuPrincipal li:hover > a{
+		background-color:  #FC7307;
+	}
+	#menuLogin{
+		margin-left: 835px;
+	}
+#contatos{
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	background-color: #D4E4F7;
+}
+	#contatosTexto{
+		font-family: 'Bree Serif', serif;
+		font-size:60px;
+		color: #B85B14;
+		padding-top: 15px;
+	}
+	#mensagContatos{
+		font-family: 'Bree Serif', serif;
+		font-size: 35px;
+		color:#005cb3;
+		margin-top: -20px;
+	}
+#conteudoPrincipal{
+	height: 68%;
+	width: 100%;
+	background-color: #D4E4F7;
+}
+	#informacoes{
+		font-family: 'Bree Serif', serif;
+		float: left;
+		width: 34%;
+
+	}
+		#formContato{
+			margin-left:75px;
+			margin-top:15px;
+			text-align: center;
+		}
+				.campos{
+					font-family: 'Bree Serif', serif;
+					font-size: 21.5px;
+				}
+				.camposForm{
+					height: 20px;
+					width: 240px;
+					border-radius: 5px;
+				}
+				.radioTexto{
+					font-family: 'Bree Serif', serif;
+					font-size: 18px;
+				}
+				#mensagem{
+					height:120px;
+					width:280px;
+					border-radius: 6px;
+				}
+				.botoesImg{
+					width: 80%;
+					height: 90%;
+				}
+				.botoes{
+					margin-top: 10px;
+				}
+	#imagem{
+		float: left;
+		width: 33%;
+	}
+		#imagemLogo{
+			width:70%;
+			height:70%;
+			margin-left: 65px;
+		}
+		#mapa{
+			float:left;
+			font-family: 'Bree Serif', serif;
+			width: 33%;
+			height: 100%;
+		}
+			#mapaLocal{
+				width:95%;
+				height:50%;
+			}
+		.botoes{
+			background-color: transparent;
+			border: none;
+		}
+#rodape{
+	width:100%;
+	height:7%;
+	background-color:#102E51;
+}
+#copyright{
+	padding-top: 15px;
+	color: #B85B14;
+	text-align:center;
+}

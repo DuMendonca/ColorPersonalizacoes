@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Color Personalizações</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/registroCategoria.css">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <script src="../js/registroCategoria.js"></script>
+</head>
+<body>
+<header id="cabecalho">
+	<nav id="menu">
+		<ul id="menuPrincipal">
+			<li><a href="registroProduto.html" class="menuTexto"> Registros</a>
+        <ul class="submenu">
+          <li><a href="registroProduto.html">Produtos</a></li>
+          <li><a href="registroCategoria.html">Categorias</a></li>
+          <li><a href="registroCliente.html">Clientes</a></li>
+          <li><a href="registroUsuario.html">Usuários</a></li>
+        </ul>
+      </li>
+			<li><a href="orcamento.html" class="menuTexto"> Orçamento</a></li>
+			<li><a href="ordemServico.html" class="menuTexto"> Ordem de serviço</a></li>
+      <li><a href="relatorioOrcamento.html" class="menuTexto"> Relatórios</a>
+        <ul class="submenu">
+          <li><a href="relatorioOrcamento.html">Orçamentos</a></li>
+          <li><a href="relatorioOrdemServico.html">Ordem de Serviços</a></li>
+        </ul>
+      </li>
+			<li id="menuBv"><a href="../index.html">Bem vindo(a) Simone</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section id="registroCategoria">
+  <h1>Registro de Categorias</h1>
+</section>
+
+<main id="conteudoPrincipal">
+  <div class="divs" id="divCadastro">
+    <fieldset id="fieldCadastro">
+      <legend >Cadastro de categorias</legend>
+      <form action="#" method="POST" id="formCadastro" onsubmit="return validarCampos()">
+
+        <label class="campos" for="nome">Nome da categoria:</label>
+        <input class="camposForm" type="text" name="nome" id="nome" placeholder="Insira nome da categoria aqui"><br>
+
+        <label class="campos" for="descricao">Descrição:</label>
+        <textarea class="camposForm" id="descricao" placeholder="Insira a descrição aqui"></textarea><br>
+
+        <button type="reset" class="botoes">
+          <img class="botoesImg" src="../imgs/buttonLimpar.png" alt="Botão limpa campos">
+        </button>
+        <button type="submit" class="botoes">
+          <img class="botoesImg" src="../imgs/buttonEnviar.png" alt="Botão enviar">
+        </button>
+      </form>
+    </fieldset>
+  </div>
+  <div class="divs" id="divConsulta">
+    <fieldset id="fieldConsulta">
+      <legend>Consulta de categorias</legend>
+      <form action="#" method="POST">
+        <label for="consultaNomeCategoria" id="labelConsultaNomeCategoria">Nome da categoria:</label>
+        <input type="text" name="consultaNomeCategoria" id="consultaNomeCategoria">
+        <button type="submit">Buscar</button>
+      </form>
+
+      <table>
+        <tr>
+          <th>Código</th>
+          <th>Nome da Categoria</th>
+          <th>Descrição da categoria</th>
+          <th>Ações</th>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td>Escritório</td>
+          <td>Categoria a qual os produtos<br> relacionados são de escritório.</td>
+          <td>
+            <form action="#" method="POST" class="formBotao">
+              <input type="hidden" name="idCliente" value="1" id="idCliente">
+              <button type="submit"><img src="../imgs/pencil.png" alt="Botão lápis"></button>
+            </form>
+            <form action="#" method="POST" class="formBotao">
+              <input type="hidden" name="idCliente" value="1" id="idCliente1">
+              <button type="submit"><img src="../imgs/trash.png" alt="Botão lixeiro"></button>
+            </form>
+          </td>
+        </tr>
+      </table>
+
+    </fieldset>
+  </div>
+</main>
+
+<footer id="rodape">
+<p id="copyright">Copyright SENAI &copy;</p>
+</footer>
+
+</body>
+</html>

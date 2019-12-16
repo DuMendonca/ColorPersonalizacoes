@@ -1,0 +1,115 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html, body{
+	height: 110%;
+	width: 100%;
+}
+#cabecalho{
+	height: 10%;
+	width: 100%;
+	background-color: #102E51;
+}
+
+	#menuPrincipal li, #menuPrincipal a{
+		list-style: none;
+		text-decoration: none;
+	}
+	.submenu{
+		display: none;
+		position: absolute;
+	}
+	#menuPrincipal{
+		float: left;
+		font-size: 17px;
+	}
+	#menuPrincipal a{
+		padding: 0px 20px;
+		height: 45px;
+		float: left;
+		line-height: 45px;
+		color: white;
+	}
+	#menuPrincipal li{
+		display: inline-block;
+		padding-top: 5px;
+	}
+	.submenu a{
+		color: white;
+		background-color: #102E51;
+		width: 150px;
+		margin-bottom: -10px;
+	}
+	#menuPrincipal li:hover > .submenu{
+		display: block;
+		top: 45px;
+		width: 150px;
+	}
+	.submenu li:hover > a{
+		background-color:  #FC7307;
+	}
+	#menuPrincipal li:hover > a{
+		background-color:  #FC7307;
+	}
+	#menuLogin{
+		margin-left: 835px;
+	}
+#destaques{
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	background-color: #D4E4F7;
+}
+	#textoDestaques{
+		font-family: 'Bree Serif', serif;
+		font-size: 60px;
+		color: #B85B14;
+		padding-top: 15px;
+	}
+	#subTextoDestaques{
+		font-family: 'Bree Serif', serif;
+		font-size: 35px;
+		color: #005cb3;
+		margin-top: -20px;
+	}
+#conteudoPrincipal{
+	height: 68%;
+	width: 100%;
+	background-color: #D4E4F7;
+}
+	.carrossel {
+	  width: 550px;
+	  height: 64%;
+	  margin: 0 auto;
+	  top: 50px;
+	  border: 1px solid #edd;
+	  background-color: #b8cae0;
+	}
+	.imgCarrossel{
+		width: 250px;
+		height: 250px;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+		#camisasImg{
+			width: 500px;
+			height: 250px;
+		}
+	.paragCarrossel{
+		font-family: 'Bree Serif', serif;
+		font-size: 14px;
+		margin-left: 23%;
+	}
+#rodape{
+	width:100%;
+	height:7%;
+	background-color:#102E51;
+}
+#copyright{
+	padding-top: 15px;
+	color: #B85B14;
+	text-align:center;
+
+
+}

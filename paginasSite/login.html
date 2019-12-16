@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Color Personalizações</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/login.css">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <script src="../js/login.js"></script>
+</head>
+<body>
+
+<header id="cabecalho">
+	<nav id="menu">
+		<ul id="menuPrincipal">
+			<li><a href="../index.html" class="menuTexto"> Home</a></li>
+			<li><a href="fundadores.html" class="menuTexto"> Fundadores</a></li>
+			<li><a href="contatos.html" class="menuTexto"> Contatos</a></li>
+			<li><a href="destaques.html" class="menuTexto"> Produtos</a>
+				<ul class="submenu">
+					<li><a href="destaques.html">Destaques</a></li>
+					<li><a href="escritorio.html">Escritório</a></li>
+					<li><a href="ecologicos.html">Ecológicos</a></li>
+					<li><a href="festa.html">Festa</a></li>
+          			<li><a href="vestuario.html">Vestuário</a></li>
+				</ul>
+			</li>
+			<li id="menuLogin"><a href="login.html"> Login</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section id="login">
+  <h1 id="loginTexto">Login</h1>
+</section>
+
+<main id="conteudoPrincipal">
+
+  <div id="divImgLogo"><img src="../imgs/logoCores.png" id="imgLogo" alt="Logo Color Personalizações"></div>
+  <div id="divForm">
+  	<form action="../paginasSistema/inicioGerente.html" method="POST" id="formLogin" onsubmit="return validarCampos()">
+  		<label class="campos" for="email">E-mail</label><br>
+		<input class="camposForm" type="email" name="email" id="email" placeholder="Exemplo@email.com"><br>
+		<label class="campos" for="senha">Senha</label><br>
+		<input class="camposForm" type="password" name="senha" id="senha" placeholder="Insira senha aqui"><br>
+		<a href="#" id="esqueciSenha">Esqueci minha senha</a><br>
+
+		<button type="reset" class="botoes">
+			<img class="botoesImg" src="../imgs/buttonLimpar.png" alt="Botão limpa campos">
+		</button>
+		<button type="submit" class="botoes">
+			<img class="botoesImg" src="../imgs/buttonEnviar.png" alt="Botão enviar">
+		</button>
+  	</form>
+  </div>
+
+</main>
+
+<footer id="rodape">
+<p id="copyright">Copyright SENAI &copy;</p>
+</footer>
+
+</body>
+</html>

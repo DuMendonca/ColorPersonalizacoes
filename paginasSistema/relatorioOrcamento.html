@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Color Personalizações</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/relatorioOrcamento.css">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <script src="../js/relatorioOrcamento.js"></script>
+</head>
+<body>
+
+<header id="cabecalho">
+	<nav id="menu">
+		<ul id="menuPrincipal">
+			<li><a href="registroProduto.html" class="menuTexto"> Registros</a>
+        <ul class="submenu">
+          <li><a href="registroProduto.html">Produtos</a></li>
+          <li><a href="registroCategoria.html">Categorias</a></li>
+          <li><a href="registroCliente.html">Clientes</a></li>
+          <li><a href="registroUsuario.html">Usuários</a></li>
+        </ul>
+      </li>
+			<li><a href="orcamento.html" class="menuTexto"> Orçamento</a></li>
+			<li><a href="ordemServico.html" class="menuTexto"> Ordem de serviço</a></li>
+      <li><a href="relatorioOrcamento.html" class="menuTexto"> Relatórios</a>
+        <ul class="submenu">
+          <li><a href="relatorioOrcamento.html">Orçamentos</a></li>
+          <li><a href="relatorioOrdemServico.html">Ordem de Serviços</a></li>
+        </ul>
+      </li>
+			<li id="menuBv"><a href="../index.html">Bem vindo(a) Simone</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section id="relatorioOrcamento">
+  <h1>Relatório de Orçamento</h1>
+</section>
+
+
+<main id="conteudoPrincipal">
+  <div class="divs" id="divFiltro">
+    <fieldset id="fieldCadastro">
+      <legend >Filtro</legend>
+      <form action="#" method="POST" id="formCadastro" onsubmit="return validarCampos()">
+
+        <label class="campos" for="cliente">Cliente:</label>
+        <select id="cliente">
+          <option value="0">Selecione...</option>
+          <option value="1">Gabriel Junkes</option>
+          <option value="2">Lucas Alves</option>
+          <option value="3">Eduardo Mendonça</option>
+        </select>
+
+        <label class="campos" for="dataInicial">Data inicial:</label>
+        <input class="camposForm" type="date" name="dataInicial" id="dataInicial">
+        <label class="campos" for="dataFinal">Data final:</label>
+        <input class="camposForm" type="date" name="dataFinal" id="dataFinal">
+        <br>
+
+        <label class="campos" for="status">Status:</label>
+        <select id="status">
+          <option value="0">Selecione...</option>
+          <option value="1">Cancelado</option>
+          <option value="2">Aprovado</option>
+          <option value="3">Em analise</option>
+        </select>
+        <br>
+        
+        <button type="reset" class="botoes">
+          <img class="botoesImg" src="../imgs/buttonLimpar.png" alt="Botão limpa campos">
+        </button>
+        <button type="submit" class="botoes">
+          <img class="botoesImg" src="../imgs/buttonGerar.png" alt="Botão para gerar relatorio">
+        </button>
+      </form>
+    </fieldset>
+  </div>
+  <div class="divs" id="divConsulta">
+    <fieldset id="fieldConsulta">
+      <legend>Relatório</legend>
+      <form action="#" method="POST">
+        <button type="submit" class="botoes"><img class="botoesImg" src="../imgs/buttonGerarPdf.png" alt="Botão para gerar pdf"></button>
+      </form>
+
+      <table>
+        <tr>
+          <th>Código</th>
+          <th>Cliente</th>
+          <th>Valor total</th>
+          <th>Produtos</th>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td>Célio Abreu</td>
+          <td>R$6000,00</td>
+          <td>Caneca Chaveiro Caneta</td>
+        </tr>
+        <tr>
+          <td>089</td>
+          <td>JVM Frutaria</td>
+          <td>R$245,00</td>
+          <td>Agenda</td>
+        </tr>
+      </table>
+
+    </fieldset>
+  </div>
+</main>
+
+<footer id="rodape">
+<p id="copyright">Copyright SENAI &copy;</p>
+</footer>
+
+</body>
+</html>

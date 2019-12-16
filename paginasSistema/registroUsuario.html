@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Color Personalizações</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/registroUsuario.css">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <script src="../js/registroUsuario.js"></script>
+</head>
+<body>
+
+<header id="cabecalho">
+	<nav id="menu">
+		<ul id="menuPrincipal">
+			<li><a href="registroProduto.html" class="menuTexto"> Registros</a>
+        <ul class="submenu">
+          <li><a href="registroProduto.html">Produtos</a></li>
+          <li><a href="registroCategoria.html">Categorias</a></li>
+          <li><a href="registroCliente.html">Clientes</a></li>
+          <li><a href="registroUsuario.html">Usuários</a></li>
+        </ul>
+      </li>
+			<li><a href="orcamento.html" class="menuTexto"> Orçamento</a></li>
+			<li><a href="ordemServico.html" class="menuTexto"> Ordem de serviço</a></li>
+      <li><a href="relatorioOrcamento.html" class="menuTexto"> Relatórios</a>
+        <ul class="submenu">
+          <li><a href="relatorioOrcamento.html">Orçamentos</a></li>
+          <li><a href="relatorioOrdemServico.html">Ordem de Serviços</a></li>
+        </ul>
+      </li>
+			<li id="menuBv"><a href="../index.html">Bem vindo(a) Simone</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section id="registroUsuario">
+  <h1>Registro de Usuários</h1>
+</section>
+
+<main id="conteudoPrincipal">
+  <div class="divs" id="divCadastro">
+    <fieldset id="fieldCadastro">
+      <legend >Cadastro de usuários</legend>
+      <form action="#" method="POST" id="formCadastro" onsubmit="return validarCampos()">
+
+        <label class="campos" for="email">Email:</label>
+        <input class="camposForm" type="email" name="email" id="email" placeholder="Insira o email do usuário">
+        <label class="campos" for="senha">Senha:</label>
+        <input class="camposForm" type="password" name="senha" id="senha" placeholder="Insira a senha do usuário">
+        <br>
+
+        <label class="campos" for="nome">Nome do funcionário:</label>
+        <input class="camposForm" type="text" name="nome" id="nome" placeholder="Insira o nome do funcionário">
+
+        <label class="campos" for="nivel">Nível de usuário:</label>
+        <select id="nivel">
+          <option value="0">Selecione...</option>
+          <option value="1">Gerente</option>
+          <option value="2">Atendente</option>
+          <option value="3">Estampador</option>
+        </select>
+        <br>
+        <button type="reset" class="botoes">
+          <img class="botoesImg" src="../imgs/buttonLimpar.png" alt="Botão limpa campos">
+        </button>
+        <button type="submit" class="botoes">
+          <img class="botoesImg" src="../imgs/buttonEnviar.png" alt="Botão enviar">
+        </button>
+      </form>
+    </fieldset>
+  </div>
+  <div class="divs" id="divConsulta">
+    <fieldset id="fieldConsulta">
+      <legend>Consulta de usuário</legend>
+      <form action="#" method="POST">
+        <label for="consultaNomeUsuario" id="labelConsultaUsuario">Nome do funcionario:</label>
+        <input type="text" name="consultaNomeUsuario" id="consultaNomeUsuario">
+        <button type="submit">Buscar</button>
+      </form>
+
+      <table>
+        <tr>
+          <th>Código</th>
+          <th>Email</th>
+          <th>Nome do Funcionário</th>
+          <th>Nível</th>
+          <th>Ações</th>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td>simone@colorpers.com.br</td>
+          <td>Simone Amâncio</td>
+          <td>Gerente</td>
+          <td>
+            <form action="#" method="POST" class="formBotao">
+              <input type="hidden" name="idUsuario" value="1" id="idCliente">
+              <button type="submit"><img src="../imgs/pencil.png" alt="Botão lápis"></button>
+            </form>
+            <form action="#" method="POST" class="formBotao">
+              <input type="hidden" name="idUsuario" value="1" id="idCliente1">
+              <button type="submit"><img src="../imgs/trash.png" alt="Botão lixeiro"></button>
+            </form>
+          </td>
+        </tr>
+      </table>
+
+    </fieldset>
+  </div>
+</main>
+
+<footer id="rodape">
+<p id="copyright">Copyright SENAI &copy;</p>
+</footer>
+
+</body>
+</html>

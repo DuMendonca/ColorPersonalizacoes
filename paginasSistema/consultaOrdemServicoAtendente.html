@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Color Personalizações</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/consultaOrdemServicoAtendente.css">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header id="cabecalho">
+  <nav id="menu">
+    <ul id="menuPrincipal">
+      <li><a href="registroClienteAtendente.html" class="menuTexto"> Registro de Clientes</a>
+      </li>
+      <li><a href="orcamentoAtendente.html" class="menuTexto"> Orçamento</a></li>
+      <li><a href="consultaOrdemServicoAtendente.html" class="menuTexto"> Consulta de Ordem de serviço</a></li>
+      <li id="menuBv"><a href="../index.html">Bem vindo(a) Alice</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="registroCliente">
+  <h1>Consulta de ordem de serviço</h1>
+</section>
+
+
+<main id="conteudoPrincipal">
+  <div id="divConsulta">
+    <fieldset id="fieldConsulta">
+      <legend>Consulta de ordem de serviço</legend>
+      <form action="#" method="POST">
+        <label for="consultaNomeCliente" id="labelConsultaNome">Nome:</label>
+        <input type="text" name="consultaNomeCliente" id="consultaNomeCliente">
+        <button type="submit">Consultar</button>
+      </form>
+
+      <table>
+        <tr>
+          <th>Código</th>
+          <th>Cliente</th>
+          <th>Data de entrega</th>
+          <th>Funcionário responsável</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td>Supermercado SW</td>
+          <td>02/05/2019</td>
+          <td>Willian Honorato</td>
+          <td>Em andamento</td>
+          <td>
+            <form action="#" method="POST" class="formBotao">
+              <input type="hidden" name="idCliente" value="1" id="idCliente">
+              <button type="submit" class="botaoOlho"><img src="../imgs/eye.png" alt="Botão olho para vizualizar ordem de serviço"></button>
+            </form>
+          </td>
+          <tr>
+          <td>002</td>
+          <td>Hipermercado</td>
+          <td>04/07/2019</td>
+          <td>Andre Marques</td>
+          <td>Em andamento</td>
+          <td>
+            <form action="#" method="POST" class="formBotao">
+              <input type="hidden" name="idCliente" value="1" id="idCliente1">
+              <button type="submit" class="botaoOlho"><img src="../imgs/eye.png" alt="Botão olho para vizualizar ordem de serviço" ></button>
+            </form>
+          </td>
+        </tr>
+      </table>
+
+    </fieldset>
+  </div>
+</main>
+
+<footer id="rodape">
+<p id="copyright">Copyright SENAI &copy;</p>
+</footer>
+
+</body>
+</html>
